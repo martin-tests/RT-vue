@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="submitForm" class="bg-gray-600 text-white rounded-lg p-4 my-4">
+  <div class="bg-gray-600 text-white rounded-lg p-4 my-4">
     <div class="flex p-2">
       <label for="name">Name:</label>
       <input v-model="name" id="name" type="text" class="ml-2 px-2 w-full">
@@ -16,9 +16,9 @@
       <input v-model="imageUrl" id="imageUrl" type="text" class="ml-2 px-2 w-full">
     </div>
     <div class="text-center">
-      <button @click="submit" class="m-4 hover:text-green-500">Submit</button>
+      <button @click="submitForm" class="m-4 hover:text-green-500">Submit</button>
     </div>
-  </form>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -16,7 +16,6 @@ const { getStoredFavorites } = useFavorites()
 const { fetchCharactersById } = useCharacterApi()
 
 const favoriteIds = ref(getStoredFavorites())
-console.log("favoriteIds", favoriteIds)
 
 const favoriteCharacters = ref<Character[]>()
 

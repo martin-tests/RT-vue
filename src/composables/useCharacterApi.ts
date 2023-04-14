@@ -28,15 +28,7 @@ export const useCharacterApi = () => {
   } 
 
   const fetchCharactersById = async (ids: number[] | number) => {
-    console.log(typeof ids)
     const response = await fetch('https://rickandmortyapi.com/api/character/' + JSON.stringify(ids))
-    const jsonData = await response.json()
-
-    return jsonData
-  }
-
-  const fetchCharacter = async (id: string) => {
-    const response = await fetch('https://rickandmortyapi.com/api/character/' + id)
     const jsonData = await response.json()
 
     return jsonData
@@ -44,7 +36,6 @@ export const useCharacterApi = () => {
 
   return {
     fetchCharacters,
-    fetchCharacter,
     fetchCharactersById
   }
 
