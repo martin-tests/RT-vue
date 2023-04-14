@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a, .green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+body {
+  --back-color: white;
+  --text-color: black;
+  background-color: var(--back-color);
+  color: var(--text-color);
+}
+
+.dark {
+  --back-color: #202329;
+	--text-color: white;
+  background-color: var(--back-color);
+  color: var(--text-color);
+}
+
+select, input {
+  background-color: var(--back-color);
+  color: var(--text-color);
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
